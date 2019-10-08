@@ -37,9 +37,9 @@ contract ShopereumCrowdSale is Crowdsale, Ownable {
   */
   constructor(uint256 _rate, address _wallet, ShopereumToken _token) public Crowdsale(_rate, _wallet, _token) {
     // hardcode stages
-    stages[0] = Stage(25000, ETH_CAP * 0.15 * (10 ** 18), 0);
-    stages[1] = Stage(20000, ETH_CAP * 0.30 * (10 ** 18), 0);
-    stages[2] = Stage(20000, ETH_CAP * 0.30 * (10 ** 18), 0);
+    stages[0] = Stage(25000, 4500 * (10 ** 18), 0);
+    stages[1] = Stage(20000, 9000 * 0.30 * (10 ** 18), 0);
+    stages[2] = Stage(20000, 9000 * 0.30 * (10 ** 18), 0);
 
 
     // call superclass constructor and set rate at current stage
